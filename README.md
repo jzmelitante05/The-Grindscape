@@ -118,8 +118,6 @@ The-Grindscape/
 ├── js/
 │   └── main.js
 │
-├── images/
-│
 ├── README.md
 └── .gitignore
 ```
@@ -249,7 +247,7 @@ Edward James V. Grageda
 ## Developers
 
 Created by:
-FINAL PROJECT GROUP
+Castro, Macadagdag, Matacot, Melitante, and Pajimola
 
 ---
 

@@ -21,9 +21,15 @@ The website was designed with a modern coffee shop aesthetic featuring responsiv
 
 GitHub Pages URL:
 
-```link
 https://jzmelitante05.github.io/The-Grindscape/
-```
+
+---
+
+## GitHub Repository
+
+Repository URL:
+
+https://github.com/jzmelitante05/The-Grindscape
 
 ---
 
@@ -98,7 +104,7 @@ https://jzmelitante05.github.io/The-Grindscape/
 ## Project Structure
 
 ```plaintext
-WEBDEV_FINAL_PROJECT/
+The-Grindscape/
 │
 ├── index.html
 ├── history.html
@@ -155,7 +161,7 @@ htdocs/
 4. Open browser:
 
 ```plaintext
-http://localhost/WEBDEV_FINAL_PROJECT/
+http://localhost/The-Grindscape/
 ```
 
 ---
@@ -243,17 +249,7 @@ Edward James V. Grageda
 ## Developers
 
 Created by:
-Castro, Macadagdag, Matacot, Melitante, and Pajimola
-
----
-
-## GitHub Repository
-
-Repository URL:
-
-```plaintext
-https://github.com/jzmelitante05/WEBDEV_FINAL_PROJECT
-```
+FINAL PROJECT GROUP
 
 ---
 

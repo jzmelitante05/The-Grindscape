@@ -33,7 +33,7 @@
           <li class="nav-item"><a class="nav-pill" href="variety.html">Our Variety</a></li>
           <li class="nav-item"><a class="nav-pill active" href="contact.html" aria-current="page">Reservations</a></li>
           <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-            <a href="#reserve-form" class="btn-card" style="padding:8px 22px;font-size:0.88rem;">
+            <a href="#reserve-form" class="btn-card btn-card--small">
               Book a Table
             </a>
           </li>
@@ -50,7 +50,7 @@
           <div class="hero-badge fade-in-up">Reservations &amp; Inquiries</div>
           <h1 class="fade-in-up delay-1">
             Let's Save<br>
-            <em style="color:var(--latte);">You a Seat.</em>
+            <em class="text-latte">You a Seat.</em>
           </h1>
           <p class="mt-3 fade-in-up delay-2">
             Whether you're planning a cozy solo visit, a date, a birthday brunch,
@@ -72,7 +72,7 @@
                 <span class="contact-info-label">Hours</span>
                 <div class="contact-info-value">
                   Daily · 10:00 AM – 10:00 PM<br>
-                  <small style="color:rgba(215,177,157,0.65);">Last order: 9:30 PM</small>
+                  <small class="text-soft">Last order: 9:30 PM</small>
                 </div>
               </div>
             </div>
@@ -119,10 +119,7 @@
             <div class="mb-4">
               <span class="section-label">Make a Booking</span>
               <h2 class="section-title" id="formHeading">Reserve Your Table</h2>
-              <p class="text-muted mt-2" style="font-size:0.92rem;">
-                All fields marked * are required. We'll confirm your reservation by email within 24 hours.
-              </p>
-            </div>
+                <p class="text-muted text-small mt-2">
 
             <div class="health-warning mb-4">
               <strong>⚠ Safety Notice:</strong> Guests must be <strong>12 years old and above</strong> to
@@ -156,7 +153,7 @@
                          placeholder="+63 917 000 0000" autocomplete="tel"
                          pattern="[+0-9\s\-()]{7,20}">
                   <div class="invalid-feedback">Please enter a valid phone number.</div>
-                  <div class="form-text text-muted" style="font-size:0.77rem;">
+                  <div class="form-text text-muted text-xsmall">
                     Optional — for faster confirmation via Viber/SMS.
                   </div>
                 </div>
@@ -198,7 +195,7 @@
                 <div class="col-12 col-md-6">
                   <label for="pageDate" class="form-label">Preferred Visit Date</label>
                   <input type="date" class="form-control" id="pageDate" name="visit_date">
-                  <div class="form-text text-muted" style="font-size:0.77rem;">
+                  <div class="form-text text-muted text-xsmall">
                     Optional — we'll try to accommodate your schedule.
                   </div>
                 </div>
@@ -228,15 +225,14 @@
 
               </div><!-- /row -->
 
-              <div id="pageFormSuccess" class="alert mt-4 d-none" role="alert"
-                   style="border-radius:14px;font-size:0.92rem;"></div>
+              <div id="pageFormSuccess" class="alert form-success-alert mt-4 d-none" role="alert"></div>
 
               <div class="mt-4">
                 <button type="submit" id="submitPageForm" class="btn-submit">
                   Send Reservation Request ✓
                 </button>
-                <p class="text-muted text-center mt-3" style="font-size:0.79rem;">
-                  By submitting, you agree to our <a href="#" style="color:var(--caramel);">Privacy Policy</a>.
+                <p class="text-muted text-caption text-center mt-3">
+                  By submitting, you agree to our <a href="#" class="link-caramel">Privacy Policy</a>.
                   We'll never share your data with third parties.
                 </p>
               </div>
@@ -254,14 +250,14 @@
       <div class="text-center mb-4 reveal">
         <span class="section-label">Find Us</span>
         <h2 class="section-title">We're Easy to Find</h2>
-        <p class="text-muted mt-2" style="font-size:0.94rem;">
+        <p class="text-muted section-copy mt-2">
           Along Marcos Highway, Antipolo — look for the coffee cup sign.
         </p>
       </div>
       <div class="map-embed reveal">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30898.1!2d121.1754!3d14.5872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33917094e22a7b15%3A0xa2be6a4fb9cb8ac3!2sAntipolo%2C%20Rizal!5e0!3m2!1sen!2sph!4v1"
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen="" loading="lazy"
           title="The Grindscape location — Marcos Highway, Antipolo, Rizal"
           aria-label="Google Maps showing Antipolo, Rizal">
         </iframe>
@@ -270,7 +266,7 @@
   </section>
 
   <!-- ═══════════════ FAQ ═══════════════ -->
-  <section class="py-5" style="background:var(--cream);" aria-labelledby="faqHeading">
+  <section class="py-5 bg-cream" aria-labelledby="faqHeading">
     <div class="container">
       <div class="text-center mb-5 reveal">
         <span class="section-label">Got Questions?</span>
@@ -280,7 +276,7 @@
         <div class="col-lg-8">
           <div class="accordion" id="faqAccordion">
 
-            <div class="accordion-item border-0 mb-3" style="border-radius:16px;overflow:hidden;box-shadow:var(--shadow-soft);">
+            <div class="accordion-item border-0 mb-3 panel-soft">
               <h3 class="accordion-header">
                 <button class="accordion-button" type="button"
                         data-bs-toggle="collapse" data-bs-target="#faq1"
@@ -297,7 +293,7 @@
               </div>
             </div>
 
-            <div class="accordion-item border-0 mb-3" style="border-radius:16px;overflow:hidden;box-shadow:var(--shadow-soft);">
+            <div class="accordion-item border-0 mb-3 panel-soft">
               <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button"
                         data-bs-toggle="collapse" data-bs-target="#faq2"
@@ -314,7 +310,7 @@
               </div>
             </div>
 
-            <div class="accordion-item border-0 mb-3" style="border-radius:16px;overflow:hidden;box-shadow:var(--shadow-soft);">
+            <div class="accordion-item border-0 mb-3 panel-soft">
               <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button"
                         data-bs-toggle="collapse" data-bs-target="#faq3"
@@ -331,7 +327,7 @@
               </div>
             </div>
 
-            <div class="accordion-item border-0 mb-3" style="border-radius:16px;overflow:hidden;box-shadow:var(--shadow-soft);">
+            <div class="accordion-item border-0 mb-3 panel-soft">
               <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button"
                         data-bs-toggle="collapse" data-bs-target="#faq4"
@@ -348,7 +344,7 @@
               </div>
             </div>
 
-            <div class="accordion-item border-0" style="border-radius:16px;overflow:hidden;box-shadow:var(--shadow-soft);">
+            <div class="accordion-item border-0 panel-soft">
               <h3 class="accordion-header">
                 <button class="accordion-button collapsed" type="button"
                         data-bs-toggle="collapse" data-bs-target="#faq5"
@@ -388,7 +384,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <p class="text-white mb-2" style="font-size:0.85rem;font-weight:600;">Quick Links</p>
+        <p class="text-white footer-heading mb-2">Quick Links</p>
         <div class="footer-links d-flex flex-column gap-1">
           <a href="index.html">Home</a>
           <a href="history.html">Menu</a>
@@ -397,8 +393,8 @@
         </div>
       </div>
       <div class="col-md-4">
-        <p class="text-white mb-2" style="font-size:0.85rem;font-weight:600;">Visit Us</p>
-        <p class="footer-tagline" style="line-height:1.7;">
+        <p class="text-white footer-heading mb-2">Visit Us</p>
+        <p class="footer-tagline">
           589 Marcos Highway<br>Antipolo, Rizal 1870<br>Daily · 10:00 AM – 10:00 PM
         </p>
       </div>
@@ -412,7 +408,7 @@
       </div>
       <div class="col-md-4 text-md-end mt-2 mt-md-0">
         <a href="https://github.com" target="_blank" rel="noopener"
-           class="footer-copy text-decoration-none" style="color:rgba(215,177,157,0.5);">
+           class="footer-copy footer-copy-link text-decoration-none">
           View on GitHub Pages ↗
         </a>
       </div>

@@ -33,8 +33,9 @@
           <li class="nav-item"><a class="nav-pill active" href="variety.html" aria-current="page">Our Variety</a></li>
           <li class="nav-item"><a class="nav-pill" href="contact.html">Reservations</a></li>
           <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
-            <button class="btn-card" data-bs-toggle="modal" data-bs-target="#contactModal"
-                    style="padding:8px 22px;font-size:0.88rem;">Book a Table</button>
+            <button class="btn-card btn-card--small" data-bs-toggle="modal" data-bs-target="#contactModal">
+              Book a Table
+            </button>
           </li>
         </ul>
       </div>
@@ -43,11 +44,11 @@
 
   <!-- ═══════════════ VARIETY HERO ═══════════════ -->
   <section class="variety-hero" aria-label="Our Variety hero">
-    <div class="container position-relative" style="z-index:2;">
+    <div class="container position-relative-z2">
       <div class="hero-badge fade-in-up">✦ Sourced · Roasted · Served</div>
       <h1 class="fade-in-up delay-1">
         More Than Coffee.<br>
-        <em style="color:var(--latte);">A Philosophy.</em>
+        <em class="text-latte">A Philosophy.</em>
       </h1>
       <p class="mt-3 fade-in-up delay-2">
         Explore our sourcing regions, roasting philosophy, seasonal beans,
@@ -62,7 +63,7 @@
       <div class="text-center mb-5 reveal">
         <span class="section-label">The Grindscape Difference</span>
         <h2 class="section-title" id="whyHeading">Why Every Cup Matters</h2>
-        <p class="text-muted mt-2" style="max-width:500px;margin:auto;font-size:0.94rem;">
+        <p class="text-muted section-copy mt-2">
           We're obsessive about every link in the chain — from the soil the trees grow in
           to the temperature of your steam wand.
         </p>
@@ -101,12 +102,12 @@
   </section>
 
   <!-- ═══════════════ BEANS & ORIGINS ═══════════════ -->
-  <section class="py-5" style="background:var(--cream);" aria-labelledby="beansHeading">
+  <section class="py-5 bg-cream" aria-labelledby="beansHeading">
     <div class="container">
       <div class="text-center mb-5 reveal">
         <span class="section-label">Farm to Cup</span>
         <h2 class="section-title" id="beansHeading">Our Current Beans</h2>
-        <p class="text-muted mt-2" style="max-width:480px;margin:auto;font-size:0.94rem;">
+        <p class="text-muted section-copy mt-2">
           Rotating single-origin selections alongside our consistent house blend.
         </p>
       </div>
@@ -121,7 +122,7 @@
               <div class="item-info">
                 <span class="item-name">The Grindscape Signature</span>
                 <p class="item-desc">Medium-dark roast · Notes of dark chocolate, dried cherry &amp; brown sugar.
-                  <br><strong style="color:var(--caramel);font-size:0.8rem;">Origin: Benguet &amp; Sagada blend</strong></p>
+                  <br><strong class="detail-note">Origin: Benguet &amp; Sagada blend</strong></p>
               </div>
             </div>
             <div class="menu-item">
@@ -148,7 +149,7 @@
               <div class="item-info">
                 <span class="item-name">Benguet Natural</span>
                 <p class="item-desc">Light roast · Strawberry jam, jasmine florals, sparkling acidity.
-                  <br><strong style="color:var(--caramel);font-size:0.8rem;">Altitude: 1,500m ASL</strong></p>
+                  <br><strong class="detail-note">Altitude: 1,500m ASL</strong></p>
               </div>
             </div>
             <div class="menu-item">
@@ -175,7 +176,7 @@
               <div class="item-info">
                 <span class="item-name">Sagada Honey Process</span>
                 <p class="item-desc">Medium roast · Dried mango, brown sugar, sweet citrus peel.
-                  <br><strong style="color:var(--caramel);font-size:0.8rem;">Altitude: 1,600–1,800m ASL</strong></p>
+                  <br><strong class="detail-note">Altitude: 1,600–1,800m ASL</strong></p>
               </div>
             </div>
             <div class="menu-item">
@@ -202,7 +203,7 @@
       <div class="text-center mb-5 reveal">
         <span class="section-label">Inside The Grindscape</span>
         <h2 class="section-title" id="galleryHeading">The Experience</h2>
-        <p class="text-muted mt-2" style="max-width:440px;margin:auto;font-size:0.94rem;">
+        <p class="text-muted section-copy mt-2">
           A glimpse into the space, the craft, and the community.
         </p>
       </div>
@@ -266,44 +267,44 @@
   </section>
 
   <!-- ═══════════════ SEASONAL SPECIALS ═══════════════ -->
-  <section class="py-5" style="background:var(--espresso);" aria-labelledby="seasonalHeading">
+  <section class="py-5 bg-espresso" aria-labelledby="seasonalHeading">
     <div class="container">
       <div class="text-center mb-5 reveal">
-        <span class="section-label" style="color:var(--latte);">Limited Time</span>
-        <h2 class="section-title" id="seasonalHeading" style="color:white;">Seasonal Specials</h2>
-        <p style="color:rgba(253,245,230,0.70);font-size:0.94rem;max-width:440px;margin:auto;">
+        <span class="section-label text-latte">Limited Time</span>
+        <h2 class="section-title text-white" id="seasonalHeading">Seasonal Specials</h2>
+        <p class="hero-card-copy section-copy">
           We rotate a small selection of seasonal offerings. Here's what's on right now.
         </p>
       </div>
       <div class="row g-4 justify-content-center">
         <div class="col-md-4 reveal">
-          <div style="background:rgba(255,255,255,0.07);border-radius:20px;padding:28px;border:1px solid rgba(215,177,157,0.18);height:100%;">
-            <div style="font-size:2rem;margin-bottom:14px;">🌸</div>
-            <h5 style="font-family:var(--display-font);color:white;font-weight:700;margin-bottom:8px;">Sakura Honey Latte</h5>
-            <p style="color:rgba(253,245,230,0.68);font-size:0.88rem;line-height:1.65;margin-bottom:14px;">
+          <div class="glass-panel">
+            <div class="feature-icon-large">🌸</div>
+            <h5 class="display-font text-white fw-bold mb-3">Sakura Honey Latte</h5>
+            <p class="hero-card-copy">
               House cherry blossom syrup, honey, and our Sagada single-origin espresso. Light, floral, and impossibly elegant.
             </p>
-            <span style="background:var(--latte);color:var(--espresso);font-weight:700;font-size:0.82rem;padding:5px 14px;border-radius:50px;">₱175 · Limited</span>
+            <span class="pill-label">₱175 · Limited</span>
           </div>
         </div>
         <div class="col-md-4 reveal">
-          <div style="background:rgba(255,255,255,0.07);border-radius:20px;padding:28px;border:1px solid rgba(215,177,157,0.18);height:100%;">
-            <div style="font-size:2rem;margin-bottom:14px;">🍋</div>
-            <h5 style="font-family:var(--display-font);color:white;font-weight:700;margin-bottom:8px;">Yuzu Cold Foam Brew</h5>
-            <p style="color:rgba(253,245,230,0.68);font-size:0.88rem;line-height:1.65;margin-bottom:14px;">
+          <div class="glass-panel">
+            <div class="feature-icon-large">🍋</div>
+            <h5 class="display-font text-white fw-bold mb-3">Yuzu Cold Foam Brew</h5>
+            <p class="hero-card-copy">
               Boss Cold Brew topped with a yuzu-infused cold foam. Bright, citrusy, with the full depth of our 24-hour brew underneath.
             </p>
-            <span style="background:var(--latte);color:var(--espresso);font-weight:700;font-size:0.82rem;padding:5px 14px;border-radius:50px;">₱185 · Limited</span>
+            <span class="pill-label">₱185 · Limited</span>
           </div>
         </div>
         <div class="col-md-4 reveal">
-          <div style="background:rgba(255,255,255,0.07);border-radius:20px;padding:28px;border:1px solid rgba(215,177,157,0.18);height:100%;">
-            <div style="font-size:2rem;margin-bottom:14px;">🍫</div>
-            <h5 style="font-family:var(--display-font);color:white;font-weight:700;margin-bottom:8px;">Tablea Mocha</h5>
-            <p style="color:rgba(253,245,230,0.68);font-size:0.88rem;line-height:1.65;margin-bottom:14px;">
+          <div class="glass-panel">
+            <div class="feature-icon-large">🍫</div>
+            <h5 class="display-font text-white fw-bold mb-3">Tablea Mocha</h5>
+            <p class="hero-card-copy">
               100% Filipino tablea cacao dissolved into our espresso with steamed whole milk. Rich, earthy, deeply Filipino.
             </p>
-            <span style="background:var(--latte);color:var(--espresso);font-weight:700;font-size:0.82rem;padding:5px 14px;border-radius:50px;">₱160 · While Stocks Last</span>
+            <span class="pill-label">₱160 · While Stocks Last</span>
           </div>
         </div>
       </div>
@@ -311,20 +312,18 @@
   </section>
 
   <!-- CTA -->
-  <section class="py-5" style="background:var(--cream);" aria-label="CTA">
+  <section class="py-5 bg-cream" aria-label="CTA">
     <div class="container text-center reveal">
       <span class="section-label">Ready?</span>
       <h2 class="section-title mb-2">Come Try It All</h2>
-      <p class="text-muted mb-4" style="font-size:0.95rem;">
+      <p class="text-muted section-copy mb-4">
         📍 589 Marcos Highway, Antipolo, Rizal &nbsp;·&nbsp; Daily 10:00 AM – 10:00 PM
       </p>
       <div class="d-flex flex-wrap justify-content-center gap-3">
-        <button class="btn-card" data-bs-toggle="modal" data-bs-target="#contactModal"
-                style="padding:13px 32px;font-size:0.94rem;">
+        <button class="btn-card btn-card--wide" data-bs-toggle="modal" data-bs-target="#contactModal">
           Reserve a Table
         </button>
-        <a href="history.html" class="btn btn-outline-secondary rounded-pill px-4"
-           style="border-color:var(--espresso);color:var(--espresso);font-weight:600;">
+        <a href="history.html" class="btn btn-outline-espresso rounded-pill px-4">
           View Full Menu
         </a>
       </div>
@@ -347,7 +346,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <p class="text-white mb-2" style="font-size:0.85rem;font-weight:600;">Quick Links</p>
+        <p class="text-white footer-heading mb-2">Quick Links</p>
         <div class="footer-links d-flex flex-column gap-1">
           <a href="index.html">Home</a>
           <a href="history.html">Menu</a>
@@ -356,8 +355,8 @@
         </div>
       </div>
       <div class="col-md-4">
-        <p class="text-white mb-2" style="font-size:0.85rem;font-weight:600;">Visit Us</p>
-        <p class="footer-tagline" style="line-height:1.7;">
+        <p class="text-white footer-heading mb-2">Visit Us</p>
+        <p class="footer-tagline">
           589 Marcos Highway<br>Antipolo, Rizal 1870<br>Daily · 10:00 AM – 10:00 PM
         </p>
       </div>
@@ -369,7 +368,7 @@
       </div>
       <div class="col-md-4 text-md-end mt-2 mt-md-0">
         <a href="https://github.com" target="_blank" rel="noopener"
-           class="footer-copy text-decoration-none" style="color:rgba(215,177,157,0.5);">
+           class="footer-copy footer-copy-link text-decoration-none">
           View on GitHub Pages ↗
         </a>
       </div>
@@ -437,12 +436,10 @@
         </form>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-sm rounded-pill" data-bs-dismiss="modal"
-                style="border:1.5px solid var(--espresso);color:var(--espresso);padding:9px 20px;font-weight:600;">
+        <button type="button" class="btn btn-sm rounded-pill btn-outline-espresso-sm" data-bs-dismiss="modal">
           Cancel
         </button>
-        <button type="button" id="submitContactForm" class="btn-card"
-                style="padding:10px 28px;font-size:0.9rem;">
+        <button type="button" id="submitContactForm" class="btn-card btn-card--xl">
           Confirm Reservation ✓
         </button>
       </div>

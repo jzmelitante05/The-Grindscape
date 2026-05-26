@@ -76,7 +76,9 @@
     }
 
     /* Submit handler */
-    submitBtn.addEventListener('click', function () {
+    function handleSubmit(event) {
+      if (event) event.preventDefault();
+
       if (successBox) successBox.classList.add('d-none');
 
       // Run age custom validation before Bootstrap's check
@@ -88,6 +90,11 @@
       if (!form.checkValidity()) {
         const firstInvalid = form.querySelector(':invalid');
         if (firstInvalid) firstInvalid.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        return;
+      }
+
+      if (config.submitToServer) {
+        form.submit();
         return;
       }
 
@@ -119,7 +126,13 @@
           }
         }, 3200);
       }
-    });
+    }
+
+    form.addEventListener('submit', handleSubmit);
+
+    if (submitBtn.type !== 'submit') {
+      submitBtn.addEventListener('click', handleSubmit);
+    }
 
     // Reset on modal close (if applicable)
     if (config.modalId) {
@@ -192,6 +205,7 @@
     msgInputId:  'pageMessage',
     charCountId: 'charCountPage',
     successId:   'pageFormSuccess',
+    submitToServer: true,
     // No modalId → standalone page
   });
 

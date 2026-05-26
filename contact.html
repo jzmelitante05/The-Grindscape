@@ -130,12 +130,12 @@
               in younger children. We appreciate your understanding.
             </div>
 
-            <form id="pageContactForm" class="needs-validation" novalidate>
+            <form id="pageContactForm" class="needs-validation" action="contact.php" method="post" novalidate>
               <div class="row g-3">
 
                 <div class="col-12 col-md-6">
                   <label for="pageName" class="form-label">Full Name *</label>
-                  <input type="text" class="form-control" id="pageName"
+                  <input type="text" class="form-control" id="pageName" name="name"
                          placeholder="e.g. Juan dela Cruz" data-role="name"
                          required minlength="2" autocomplete="name">
                   <div class="invalid-feedback">Please enter your full name (at least 2 characters).</div>
@@ -144,7 +144,7 @@
 
                 <div class="col-12 col-md-6">
                   <label for="pageEmail" class="form-label">Email Address *</label>
-                  <input type="email" class="form-control" id="pageEmail"
+                  <input type="email" class="form-control" id="pageEmail" name="email"
                          placeholder="you@example.com" required autocomplete="email">
                   <div class="invalid-feedback">Please enter a valid email address (e.g. name@domain.com).</div>
                   <div class="valid-feedback">Valid email!</div>
@@ -152,7 +152,7 @@
 
                 <div class="col-12 col-md-6">
                   <label for="pagePhone" class="form-label">Phone Number</label>
-                  <input type="tel" class="form-control" id="pagePhone"
+                  <input type="tel" class="form-control" id="pagePhone" name="phone"
                          placeholder="+63 917 000 0000" autocomplete="tel"
                          pattern="[+0-9\s\-()]{7,20}">
                   <div class="invalid-feedback">Please enter a valid phone number.</div>
@@ -163,7 +163,7 @@
 
                 <div class="col-12 col-md-6">
                   <label for="pageSubject" class="form-label">Subject *</label>
-                  <select class="form-select" id="pageSubject" required>
+                  <select class="form-select" id="pageSubject" name="subject" required>
                     <option value="" disabled selected>Select a reason</option>
                     <option value="table">Reserve a Table</option>
                     <option value="event">Private Event Inquiry</option>
@@ -176,7 +176,7 @@
 
                 <div class="col-12 col-md-6">
                   <label for="pagePartySize" class="form-label">Party Size</label>
-                  <select class="form-select" id="pagePartySize">
+                  <select class="form-select" id="pagePartySize" name="party_size">
                     <option value="" disabled selected>How many guests?</option>
                     <option value="1">1 person (Solo)</option>
                     <option value="2">2 persons</option>
@@ -188,7 +188,7 @@
 
                 <div class="col-12 col-md-6">
                   <label for="pageAge" class="form-label">Your Age *</label>
-                  <input type="number" class="form-control" id="pageAge"
+                  <input type="number" class="form-control" id="pageAge" name="age"
                          placeholder="Must be 12 or older" required min="12" max="120">
                   <div class="invalid-feedback" id="pageAgeError">
                     Please enter a valid age (12 years and above).
@@ -197,7 +197,7 @@
 
                 <div class="col-12 col-md-6">
                   <label for="pageDate" class="form-label">Preferred Visit Date</label>
-                  <input type="date" class="form-control" id="pageDate">
+                  <input type="date" class="form-control" id="pageDate" name="visit_date">
                   <div class="form-text text-muted" style="font-size:0.77rem;">
                     Optional — we'll try to accommodate your schedule.
                   </div>
@@ -205,7 +205,7 @@
 
                 <div class="col-12 col-md-6">
                   <label for="pageTime" class="form-label">Preferred Time</label>
-                  <select class="form-select" id="pageTime">
+                  <select class="form-select" id="pageTime" name="visit_time">
                     <option value="" disabled selected>Select a time slot</option>
                     <option value="10-12">10:00 AM – 12:00 PM</option>
                     <option value="12-14">12:00 PM – 2:00 PM</option>
@@ -217,7 +217,7 @@
 
                 <div class="col-12">
                   <label for="pageMessage" class="form-label">Message / Special Requests *</label>
-                  <textarea class="form-control" id="pageMessage" rows="5"
+                  <textarea class="form-control" id="pageMessage" name="message" rows="5"
                             placeholder="Tell us about your visit — party size, dietary needs, occasion, or any special arrangements you'd like..."
                             required minlength="15"></textarea>
                   <div class="invalid-feedback">
@@ -232,7 +232,7 @@
                    style="border-radius:14px;font-size:0.92rem;"></div>
 
               <div class="mt-4">
-                <button type="button" id="submitPageForm" class="btn-submit">
+                <button type="submit" id="submitPageForm" class="btn-submit">
                   Send Reservation Request ✓
                 </button>
                 <p class="text-muted text-center mt-3" style="font-size:0.79rem;">

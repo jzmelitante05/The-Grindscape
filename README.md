@@ -21,8 +21,8 @@ The website was designed with a modern coffee shop aesthetic featuring responsiv
 
 GitHub Pages URL:
 
-```plaintext
-https://jzmelitante05.github.io/WEBDEV_FINAL_PROJECT/
+```link
+https://jzmelitante05.github.io/The-Grindscape/
 ```
 
 ---

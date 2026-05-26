@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservations | The Grindscape</title>
+  <meta name="description" content="Reserve a table at The Grindscape — Antipolo's favorite specialty coffee shop. Book for dine-in, private events, or just drop in.">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,700&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+<div class="content-wrapper">
+
+  <!-- ═══════════════ NAVBAR ═══════════════ -->
+  <nav class="site-navbar navbar navbar-expand-lg" id="mainNavbar" aria-label="Main navigation">
+    <div class="container">
+      <a class="navbar-brand-custom" href="index.html">
+        <span class="brand-icon">☕</span>THE GRINDSCAPE
+      </a>
+      <button class="navbar-toggler" type="button"
+              data-bs-toggle="collapse" data-bs-target="#navbarMain"
+              aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMain">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-pill" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-pill" href="history.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-pill" href="variety.html">Our Variety</a></li>
+          <li class="nav-item"><a class="nav-pill active" href="contact.html" aria-current="page">Reservations</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0">
+            <a href="#reserve-form" class="btn-card" style="padding:8px 22px;font-size:0.88rem;">
+              Book a Table
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════ CONTACT HERO ═══════════════ -->
+  <section class="contact-hero" aria-label="Contact hero">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="hero-badge fade-in-up">Reservations &amp; Inquiries</div>
+          <h1 class="fade-in-up delay-1">
+            Let's Save<br>
+            <em style="color:var(--latte);">You a Seat.</em>
+          </h1>
+          <p class="mt-3 fade-in-up delay-2">
+            Whether you're planning a cozy solo visit, a date, a birthday brunch,
+            or a private event — we'd love to host you. Fill out the form below
+            and we'll confirm within 24 hours.
+          </p>
+
+          <div class="mt-4 fade-in-up delay-3">
+            <div class="contact-info-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <span class="contact-info-label">Address</span>
+                <div class="contact-info-value">589 Marcos Highway, Antipolo, Rizal 1870</div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon">🕙</div>
+              <div>
+                <span class="contact-info-label">Hours</span>
+                <div class="contact-info-value">
+                  Daily · 10:00 AM – 10:00 PM<br>
+                  <small style="color:rgba(215,177,157,0.65);">Last order: 9:30 PM</small>
+                </div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <span class="contact-info-label">Phone / Viber</span>
+                <div class="contact-info-value">
+                  <a href="tel:+639171234567">+63 917 123 4567</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon">✉️</div>
+              <div>
+                <span class="contact-info-label">Email</span>
+                <div class="contact-info-value">
+                  <a href="mailto:thegrindscape@gmail.com">thegrindscape@gmail.com</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-info-item">
+              <div class="contact-icon">📱</div>
+              <div>
+                <span class="contact-info-label">Social Media</span>
+                <div class="contact-info-value">
+                  <a href="#">@thegrindscape</a> on Instagram &amp; Facebook
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ RESERVATION FORM ═══════════════ -->
+  <section class="py-5" id="reserve-form" aria-labelledby="formHeading">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-9 col-xl-8">
+          <div class="reservation-card">
+
+            <div class="mb-4">
+              <span class="section-label">Make a Booking</span>
+              <h2 class="section-title" id="formHeading">Reserve Your Table</h2>
+              <p class="text-muted mt-2" style="font-size:0.92rem;">
+                All fields marked * are required. We'll confirm your reservation by email within 24 hours.
+              </p>
+            </div>
+
+            <div class="health-warning mb-4">
+              <strong>⚠ Safety Notice:</strong> Guests must be <strong>12 years old and above</strong> to
+              visit The Grindscape. Caffeine can cause anxiety, elevated heart rate, and disrupted sleep
+              in younger children. We appreciate your understanding.
+            </div>
+
+            <form id="pageContactForm" class="needs-validation" novalidate>
+              <div class="row g-3">
+
+                <div class="col-12 col-md-6">
+                  <label for="pageName" class="form-label">Full Name *</label>
+                  <input type="text" class="form-control" id="pageName"
+                         placeholder="e.g. Juan dela Cruz" data-role="name"
+                         required minlength="2" autocomplete="name">
+                  <div class="invalid-feedback">Please enter your full name (at least 2 characters).</div>
+                  <div class="valid-feedback">Looks good!</div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <label for="pageEmail" class="form-label">Email Address *</label>
+                  <input type="email" class="form-control" id="pageEmail"
+                         placeholder="you@example.com" required autocomplete="email">
+                  <div class="invalid-feedback">Please enter a valid email address (e.g. name@domain.com).</div>
+                  <div class="valid-feedback">Valid email!</div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <label for="pagePhone" class="form-label">Phone Number</label>
+                  <input type="tel" class="form-control" id="pagePhone"
+                         placeholder="+63 917 000 0000" autocomplete="tel"
+                         pattern="[+0-9\s\-()]{7,20}">
+                  <div class="invalid-feedback">Please enter a valid phone number.</div>
+                  <div class="form-text text-muted" style="font-size:0.77rem;">
+                    Optional — for faster confirmation via Viber/SMS.
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <label for="pageSubject" class="form-label">Subject *</label>
+                  <select class="form-select" id="pageSubject" required>
+                    <option value="" disabled selected>Select a reason</option>
+                    <option value="table">Reserve a Table</option>
+                    <option value="event">Private Event Inquiry</option>
+                    <option value="birthday">Birthday Celebration</option>
+                    <option value="feedback">Feedback or Suggestion</option>
+                    <option value="other">Other</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a subject.</div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <label for="pagePartySize" class="form-label">Party Size</label>
+                  <select class="form-select" id="pagePartySize">
+                    <option value="" disabled selected>How many guests?</option>
+                    <option value="1">1 person (Solo)</option>
+                    <option value="2">2 persons</option>
+                    <option value="3-4">3–4 persons</option>
+                    <option value="5-8">5–8 persons</option>
+                    <option value="9+">9 or more (event)</option>
+                  </select>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <label for="pageAge" class="form-label">Your Age *</label>
+                  <input type="number" class="form-control" id="pageAge"
+                         placeholder="Must be 12 or older" required min="12" max="120">
+                  <div class="invalid-feedback" id="pageAgeError">
+                    Please enter a valid age (12 years and above).
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <label for="pageDate" class="form-label">Preferred Visit Date</label>
+                  <input type="date" class="form-control" id="pageDate">
+                  <div class="form-text text-muted" style="font-size:0.77rem;">
+                    Optional — we'll try to accommodate your schedule.
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <label for="pageTime" class="form-label">Preferred Time</label>
+                  <select class="form-select" id="pageTime">
+                    <option value="" disabled selected>Select a time slot</option>
+                    <option value="10-12">10:00 AM – 12:00 PM</option>
+                    <option value="12-14">12:00 PM – 2:00 PM</option>
+                    <option value="14-17">2:00 PM – 5:00 PM</option>
+                    <option value="17-20">5:00 PM – 8:00 PM</option>
+                    <option value="20-22">8:00 PM – 10:00 PM</option>
+                  </select>
+                </div>
+
+                <div class="col-12">
+                  <label for="pageMessage" class="form-label">Message / Special Requests *</label>
+                  <textarea class="form-control" id="pageMessage" rows="5"
+                            placeholder="Tell us about your visit — party size, dietary needs, occasion, or any special arrangements you'd like..."
+                            required minlength="15"></textarea>
+                  <div class="invalid-feedback">
+                    Message must be at least 15 characters. Please give us more detail!
+                  </div>
+                  <div id="charCountPage" class="form-text mt-1">0 / 15 minimum characters</div>
+                </div>
+
+              </div><!-- /row -->
+
+              <div id="pageFormSuccess" class="alert mt-4 d-none" role="alert"
+                   style="border-radius:14px;font-size:0.92rem;"></div>
+
+              <div class="mt-4">
+                <button type="button" id="submitPageForm" class="btn-submit">
+                  Send Reservation Request ✓
+                </button>
+                <p class="text-muted text-center mt-3" style="font-size:0.79rem;">
+                  By submitting, you agree to our <a href="#" style="color:var(--caramel);">Privacy Policy</a>.
+                  We'll never share your data with third parties.
+                </p>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ MAP ═══════════════ -->
+  <section class="pb-5" aria-label="Our location map">
+    <div class="container">
+      <div class="text-center mb-4 reveal">
+        <span class="section-label">Find Us</span>
+        <h2 class="section-title">We're Easy to Find</h2>
+        <p class="text-muted mt-2" style="font-size:0.94rem;">
+          Along Marcos Highway, Antipolo — look for the coffee cup sign.
+        </p>
+      </div>
+      <div class="map-embed reveal">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30898.1!2d121.1754!3d14.5872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33917094e22a7b15%3A0xa2be6a4fb9cb8ac3!2sAntipolo%2C%20Rizal!5e0!3m2!1sen!2sph!4v1"
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="The Grindscape location — Marcos Highway, Antipolo, Rizal"
+          aria-label="Google Maps showing Antipolo, Rizal">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FAQ ═══════════════ -->
+  <section class="py-5" style="background:var(--cream);" aria-labelledby="faqHeading">
+    <div class="container">
+      <div class="text-center mb-5 reveal">
+        <span class="section-label">Got Questions?</span>
+        <h2 class="section-title" id="faqHeading">Frequently Asked</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAccordion">
+
+            <div class="accordion-item border-0 mb-3" style="border-radius:16px;overflow:hidden;box-shadow:var(--shadow-soft);">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq1"
+                        aria-expanded="true" aria-controls="faq1">
+                  Do I need a reservation to visit?
+                </button>
+              </h3>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Walk-ins are always welcome! However, for parties of 5 or more, birthday celebrations,
+                  or private events, we strongly recommend reserving in advance to ensure we have the
+                  space ready for you.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 mb-3" style="border-radius:16px;overflow:hidden;box-shadow:var(--shadow-soft);">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq2"
+                        aria-expanded="false" aria-controls="faq2">
+                  Is there a minimum spend per table?
+                </button>
+              </h3>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  For solo visitors and small groups (up to 4), there's no minimum spend. For tables of 5+
+                  during peak hours (weekends, 12 PM – 3 PM), a minimum consumption of ₱200 per person applies.
+                  Private event packages start at ₱5,000.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 mb-3" style="border-radius:16px;overflow:hidden;box-shadow:var(--shadow-soft);">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq3"
+                        aria-expanded="false" aria-controls="faq3">
+                  Do you accommodate dietary restrictions?
+                </button>
+              </h3>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes! Oat milk and almond milk are available as alternatives to whole milk (+₱20).
+                  Several of our pastries are vegetarian-friendly. Please inform our staff of any
+                  allergies or dietary needs when you arrive — we'll do our best to accommodate you.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0 mb-3" style="border-radius:16px;overflow:hidden;box-shadow:var(--shadow-soft);">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq4"
+                        aria-expanded="false" aria-controls="faq4">
+                  Is there free Wi-Fi and power outlets?
+                </button>
+              </h3>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes to both! We have fast, reliable Wi-Fi (password on your receipt) and power outlets
+                  at most tables. We're designed to be your third home — work, study, or just relax. We
+                  only ask that tables be given up after 3 hours during peak hours on weekends.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item border-0" style="border-radius:16px;overflow:hidden;box-shadow:var(--shadow-soft);">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#faq5"
+                        aria-expanded="false" aria-controls="faq5">
+                  Can I bring my own food or cake?
+                </button>
+              </h3>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Outside food is generally not allowed, but we make an exception for celebration cakes
+                  with a corkage fee of ₱150. Please mention this when making your reservation so we can
+                  prepare the space and any birthday setup. We also offer in-house celebration packages —
+                  ask us for details!
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="footer-brand">☕ The Grindscape</div>
+        <p class="footer-tagline mt-1">Life's too short for bad coffee.</p>
+        <div class="footer-social mt-3 d-flex gap-2">
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Instagram">ig</a>
+          <a href="#" aria-label="Twitter">tw</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <p class="text-white mb-2" style="font-size:0.85rem;font-weight:600;">Quick Links</p>
+        <div class="footer-links d-flex flex-column gap-1">
+          <a href="index.html">Home</a>
+          <a href="history.html">Menu</a>
+          <a href="variety.html">Our Variety</a>
+          <a href="contact.html">Reservations</a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <p class="text-white mb-2" style="font-size:0.85rem;font-weight:600;">Visit Us</p>
+        <p class="footer-tagline" style="line-height:1.7;">
+          589 Marcos Highway<br>Antipolo, Rizal 1870<br>Daily · 10:00 AM – 10:00 PM
+        </p>
+      </div>
+    </div>
+    <hr class="footer-divider">
+    <div class="row align-items-center">
+      <div class="col-md-8">
+        <p class="footer-copy mb-0">
+          © 2026 The Grindscape. All Rights Reserved. | Created by <strong>Castro, Macadagdag, Matacot, Melitante, and Pajimola</strong>
+        </p>
+      </div>
+      <div class="col-md-4 text-md-end mt-2 mt-md-0">
+        <a href="https://github.com" target="_blank" rel="noopener"
+           class="footer-copy text-decoration-none" style="color:rgba(215,177,157,0.5);">
+          View on GitHub Pages ↗
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
